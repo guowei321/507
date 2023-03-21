@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-loop {
+  white-space: nowrap; /* 禁止换行 */
+  animation: text-loop 5s linear infinite; /* 定义动画名称、时长以及动画模式 */
+}
+
+@keyframes text-loop {
+  0% {
+    transform: translateX(0); /* 初始位置为 0 */
+  }
+  
+  100% {
+    transform: translateX(-100%); /* 移动到左边缘位置再从右边出来，实现循环 */
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="text-loop">
+  这是一段需要循环的文本。这是一段需要循环的文本。这是一段需要循环的文本。
+</div>
+
+</body>
+</html>
